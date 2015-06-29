@@ -1,0 +1,21 @@
+// include files by order to retain dependencies intact
+
+// common styles
+@import "common/_colors";    //must be required first
+@import "common/_variables"; //must be required second
+@import "common/_mixin";     //must be required third
+@import "common/_animation"; 
+@import "common/_main";
+
+// styles for widgets
+@import "widgets/_header";
+@import "widgets/_navbar";
+@import "widgets/_tabs";
+@import "widgets/_tile";
+@import "widgets/_panel";
+@import "widgets/_notification";
+
+// styles for views (different pages)
+@import "views/_home";
+@import "views/_signup";
+@import "views/_about";

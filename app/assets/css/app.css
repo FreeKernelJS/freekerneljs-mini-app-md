@@ -1,0 +1,406 @@
+/* line 1, ../common/_animation.scss */
+.page-animation.ng-animate {
+  position: absolute;
+  width: 100%;
+}
+
+/* line 6, ../common/_animation.scss */
+.page-animation.ng-enter {
+  z-index: 9999;
+  opacity: 1;
+}
+
+/* line 11, ../common/_animation.scss */
+.page-animation.ng-leave {
+  z-index: 8888;
+  opacity: 0;
+}
+
+/* line 3, ../common/_main.scss */
+body {
+  background-color: #f5f6f8;
+  color: #272f39;
+}
+
+/* line 8, ../common/_main.scss */
+a {
+  color: #12A1D5;
+  text-decoration: none;
+}
+
+/* line 12, ../common/_main.scss */
+a:hover,
+a:focus,
+a:visited {
+  color: #0e7da6;
+}
+
+/* line 17, ../common/_main.scss */
+a:focus {
+  outline: 0;
+  outline-offset: -2px;
+}
+
+/* line 25, ../common/_main.scss */
+.fkjs-page-wrapper {
+  padding-left: 1px;
+}
+
+/* line 29, ../common/_main.scss */
+.fkjs-button-small {
+  min-width: 16px;
+  margin: 0;
+}
+
+/* line 1, ../widgets/_header.scss */
+.fkjs-page-header {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+  height: 81px;
+}
+
+/* line 6, ../widgets/_header.scss */
+.fkjs-page-header .md-button {
+  background-color: #FFF;
+  font-size: 1.3em;
+  border-radius: 0 15% 15% 0;
+  padding: 3px 3px 3px 1px;
+  font-weight: bold;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  margin: 27px 0 0 0;
+  min-width: initial;
+  height: 16px;
+}
+
+/* line 18, ../widgets/_header.scss */
+.fkjs-page-header-text {
+  margin-left: 11px;
+  font-size: 1.5em;
+  text-transform: uppercase;
+  line-height: 60px;
+  padding-top: 15px;
+}
+
+/* line 1, ../widgets/_navbar.scss */
+.md-sidenav-backdrop.md-opaque.md-default-theme {
+  display: none;
+}
+
+/* line 5, ../widgets/_navbar.scss */
+.fkjs-navbar {
+  margin: 10px 0;
+  display: block;
+  width: 304px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  border-radius: 5px;
+  background-color: #272f39;
+  position: relative !important;
+}
+
+/* line 14, ../widgets/_navbar.scss */
+.fkjs-navbar-header {
+  background: url("../images/logo.png") no-repeat 26px center #414e5e;
+  color: #677b96;
+  font-size: 2em;
+  text-transform: uppercase;
+  padding: 16px 0 16px 67px;
+  margin: 0;
+}
+
+/* line 23, ../widgets/_navbar.scss */
+.fkjs-navbar-body {
+  padding: 16px;
+}
+
+/* line 27, ../widgets/_navbar.scss */
+.fkjs-navbar-body .md-button {
+  text-decoration: none !important;
+  width: 100%;
+  text-align: left;
+  line-height: 32px;
+  display: block;
+  margin: 0 0 1px;
+  padding: 10px;
+}
+
+/* line 37, ../widgets/_navbar.scss */
+.fkjs-navbar-body .md-button.md-default-theme {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+/* line 40, ../widgets/_navbar.scss */
+.fkjs-navbar-body .md-button.md-default-theme.active {
+  color: rgba(255, 255, 255, 0.75);
+  background-color: rgba(89, 104, 121, 0.35);
+}
+
+/* line 45, ../widgets/_navbar.scss */
+.fkjs-navbar-item-icon {
+  font-size: 1.5em;
+}
+
+/* line 49, ../widgets/_navbar.scss */
+.fkjs-navbar-item-text {
+  padding-left: 10px;
+  font-size: 1.3em;
+  font-weight: 100;
+  text-transform: none;
+  vertical-align: bottom;
+}
+
+/* line 1, ../widgets/_tabs.scss */
+md-tabs .md-header .md-ripple {
+  border-color: rgba(0, 0, 0, 0.54) !important;
+}
+
+/* line 5, ../widgets/_tabs.scss */
+md-tabs-ink-bar {
+  background-color: #1fb6ab !important;
+  color: #1fb6ab !important;
+}
+
+/* line 10, ../widgets/_tabs.scss */
+.tabs-wrapper .tabpanel-container {
+  display: block;
+  position: relative;
+  border: 0px solid black;
+  height: 200px;
+  overflow: hidden;
+  padding: 16px;
+}
+
+/* line 19, ../widgets/_tabs.scss */
+.tabs-wrapper [role="tabpanel"] {
+  width: 100%;
+  height: 100%;
+  -webkit-transition: all cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.5s;
+  transition: all cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.5s;
+  position: absolute;
+}
+
+/* line 26, ../widgets/_tabs.scss */
+.tabs-wrapper [role="tabpanel"].ng-leave.ng-leave-active,
+.tabs-wrapper [role="tabpanel"].ng-enter {
+  top: -300px;
+}
+
+/* line 30, ../widgets/_tabs.scss */
+.tabs-wrapper [role="tabpanel"].ng-leave,
+.tabs-wrapper [role="tabpanel"].ng-enter.ng-enter-active {
+  top: 0;
+}
+
+/* line 34, ../widgets/_tabs.scss */
+.tabs-wrapper [role="tabpanel"].ng-leave {
+  z-index: 100;
+}
+
+/* line 1, ../widgets/_tile.scss */
+.fkjs-info-tile {
+  padding: 20px;
+  clear: both;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  border-radius: 5px;
+  background-color: #fff;
+}
+
+/* line 10, ../widgets/_tile.scss */
+.fkjs-info-tile .mini-stat-icon {
+  width: 60px;
+  height: 60px;
+  display: inline-block;
+  line-height: 60px;
+  text-align: center;
+  font-size: 30px;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  -ms-border-radius: 100%;
+  border-radius: 100%;
+  float: left;
+  margin-right: 10px;
+  color: #FFF;
+}
+
+/* line 23, ../widgets/_tile.scss */
+.fkjs-info-tile .mini-stat-info {
+  padding-top: 8px;
+}
+
+/* line 27, ../widgets/_tile.scss */
+.fkjs-info-tile .mini-stat-info span {
+  display: block;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+/* line 33, ../widgets/_tile.scss */
+.fkjs-info-tile .visitors {
+  background-color: #1fb6ab;
+}
+
+/* line 37, ../widgets/_tile.scss */
+.fkjs-info-tile .users {
+  background-color: #f4b541;
+}
+
+/* line 41, ../widgets/_tile.scss */
+.fkjs-info-tile .tickets {
+  background-color: #ff6e61;
+}
+
+/* line 45, ../widgets/_tile.scss */
+.fkjs-info-tile .topics {
+  background-color: #A48AD4;
+}
+
+/* line 1, ../widgets/_panel.scss */
+.fkjs-panel {
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  border-radius: 5px;
+  background-color: #fff;
+}
+
+/* line 6, ../widgets/_panel.scss */
+.fkjs-panel-header {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+  font-size: 1.3em;
+  padding: 45px 16px 6px;
+}
+
+/* line 12, ../widgets/_panel.scss */
+.fkjs-panel-title {
+  font-weight: 500;
+  line-height: 32px;
+}
+
+/* line 17, ../widgets/_panel.scss */
+.fkjs-panel-controls > a {
+  padding-top: 1px;
+  width: 18px;
+  color: rgba(0, 0, 0, 0.54);
+  font-weight: 400;
+  text-align: center;
+  text-decoration: none;
+}
+
+/* line 26, ../widgets/_panel.scss */
+.fkjs-panel-body {
+  padding: 16px;
+}
+
+/* line 30, ../widgets/_panel.scss */
+.fkjs-panel-flex {
+  display: block;
+  position: relative;
+  height: 310px;
+  overflow: hidden;
+}
+
+/* line 1, ../widgets/_notification.scss */
+.fkjs-notification-dialog {
+  border: 1px solid rgba(0, 0, 0, 0.54);
+  border-top-width: 4px;
+}
+
+/* line 6, ../widgets/_notification.scss */
+.fkjs-notification-footer {
+  padding: 15px 0;
+}
+
+/* line 3, ../views/_home.scss */
+.fkjs-inbox-portlet {
+  padding: 0;
+}
+
+/* line 6, ../views/_home.scss */
+.inbox {
+  padding: 10px 0;
+}
+
+/* line 9, ../views/_home.scss */
+.inbox .md-button {
+  text-transform: none;
+}
+
+/* line 12, ../views/_home.scss */
+.inbox-icon {
+  margin-right: 10px;
+}
+
+/* line 17, ../views/_home.scss */
+.fkjs-notification-dialog ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* line 23, ../views/_home.scss */
+.fkjs-notification-dialog li {
+  margin: 0;
+  padding: 12px;
+  border-top: 1px solid rgba(0, 0, 0, 0.12);
+}
+
+/* line 29, ../views/_home.scss */
+.fkjs-notification-dialog li.last {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+}
+
+/* line 33, ../views/_home.scss */
+.fkjs-notification-dialog .notify-icon {
+  padding-right: 5px;
+  font-size: 1.3em;
+}
+
+/* line 38, ../views/_home.scss */
+.fkjs-notification-dialog .notify-count {
+  background-color: #f4b541;
+  line-height: 20px;
+  height: 20px;
+  padding: .1em .65em .2em;
+  color: #fff;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  border-radius: 5px;
+}
+
+/* line 1, ../views/_signup.scss */
+.form-portlet .fkjs-panel {
+  margin: 16px 16px 24px;
+}
+
+/* line 5, ../views/_signup.scss */
+.form-portlet-last .fkjs-panel {
+  margin: 16px;
+}
+
+/* line 8, ../views/_signup.scss */
+.form-actions {
+  margin-bottom: 20px;
+}
+
+/* line 11, ../views/_signup.scss */
+.form-actions .md-button {
+  min-width: 10em;
+  margin: 1em;
+  line-height: 25px;
+}
+
+/* line 16, ../views/_signup.scss */
+.form-label {
+  padding-right: 20px;
+}
+
+/* line 1, ../views/_about.scss */
+.simple-bg {
+  background-color: #fff !important;
+}
+
+/*# sourceMappingURL=app.css.map */

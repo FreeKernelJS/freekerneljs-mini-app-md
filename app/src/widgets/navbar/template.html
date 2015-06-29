@@ -1,0 +1,30 @@
+<nav layout="column">
+    <md-sidenav class="md-sidenav-left md-whiteframe-z2 fkjs-navbar" 
+            md-component-id="appSideNav" 
+            md-is-open="true" flex>
+
+        <!-- 
+            [angular-material v0.10.0] 
+            >> Note: some kind of bug in $mdComponentRegistry prevent it from getting a scope variable
+            in this way: md-component-id="{{sidnavId}}"
+            so unfortunately at this point we must define a static id for the bar
+        -->
+    
+        <h1 class="fkjs-navbar-header">
+            fkjs_(title)
+        </h1>
+
+        <div layout="column" layout-align="space-between start" class="fkjs-navbar-body">
+
+        <md-button ng-repeat="item in navbarItems"
+                       ng-class="{ 'active' : item.isActive }"
+                       href="#{{item.pageUrl}}"
+                       aria-label="menu item">
+
+                <i class="fkjs-navbar-item-icon mdi {{item.icon}}"></i>
+                <span class="fkjs-navbar-item-text" translate="{{item.locale}}"></span>
+        </md-button>
+
+    </div>
+    </md-sidenav>
+</nav>

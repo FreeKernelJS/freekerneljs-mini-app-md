@@ -1,0 +1,26 @@
+{
+    "name": "freekerneljs-mini-app-md",
+    "version": "0.1.0",
+    "description": "Mini application template to be used with generator-freekerneljs. Depends on AngularJS and Angular Material.",
+    "license": "MIT",
+    "repository": "https://github.com/FreeKernelJS/freekerneljs-mini-app-md",
+    "author": {
+        "name": "FreeKernelJS",
+        "email": "labs@freekerneljs.org",
+        "url": "http://www.freekerneljs.org"
+    },
+    "homepage": "http://www.freekerneljs.org",
+    "keywords": [
+      "freekerneljs",
+      "yeoman-generator",
+      "angularjs",
+      "angular-material",
+      "material-design",
+      "grunt",
+      "bower",
+      "karma-jasmine",
+      "templates",
+      "bootstrap",
+      "ngdocs"
+  ]
+}

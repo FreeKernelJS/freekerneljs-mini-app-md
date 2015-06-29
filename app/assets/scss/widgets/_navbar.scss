@@ -1,0 +1,55 @@
+.md-sidenav-backdrop.md-opaque.md-default-theme {
+    display: none; //important: when the sidenav is open we still want to unable the user to work
+}
+
+.fkjs-navbar {
+    margin: 10px 0;
+    display: block;
+    width: 304px;
+    @include border-radius($border-radius);
+    background-color: $color-background-900;
+    position: relative !important; //push the content right when open, instead of floating above it
+}
+
+.fkjs-navbar-header {
+    background: url('#{$images-path}logo.png') no-repeat 26px center $color-background-800;
+    color: $color-background-600;
+    font-size: $font-size-xlarge;
+    text-transform: uppercase;
+    padding: $space-small 0 $space-small 67px;
+    margin: 0;
+}
+
+.fkjs-navbar-body{
+    padding: 16px;
+}
+
+.fkjs-navbar-body .md-button{
+    text-decoration: none !important;
+    width: 100%;
+    text-align: left;
+    line-height: 32px;
+    display: block;
+    margin: 0 0 1px;
+    padding: 10px;
+}
+
+.fkjs-navbar-body .md-button.md-default-theme {
+    color: rgba(255, 255, 255, 0.3);
+}
+.fkjs-navbar-body .md-button.md-default-theme.active {
+    color: rgba(255, 255, 255, 0.75);
+    background-color: rgba(89, 104, 121, 0.35);
+}
+
+.fkjs-navbar-item-icon{
+    font-size: $font-size-large;
+}
+
+.fkjs-navbar-item-text{
+    padding-left: 10px;
+    font-size: $font-size-xnormal;
+    font-weight: 100;
+    text-transform: none;
+    vertical-align: bottom;
+}

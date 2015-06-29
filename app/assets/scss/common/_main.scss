@@ -1,0 +1,32 @@
+// ~~~ html elements
+
+body {
+    background-color: $color-background-100;
+    color: $color-background-900;
+}
+
+a {
+    color: $link-color;
+    text-decoration: none;
+}
+a:hover,
+a:focus,
+a:visited {
+    color: $link-color-dark;
+}
+a:focus {
+    outline: 0;
+    outline-offset: -2px;
+}
+
+
+// ~~~ fkjs styles 
+
+.fkjs-page-wrapper {
+    padding-left: 1px;
+}
+
+.fkjs-button-small {
+    min-width: 16px;
+    margin: 0;
+}

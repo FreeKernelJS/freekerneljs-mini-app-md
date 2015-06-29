@@ -1,0 +1,119 @@
+<md-content class="md-padding" flex>
+    
+
+    <!-- Login details -->
+    <!--~~~~~~~~~~~~~~~-->
+    <floating-panel data-title="Login Details" class="form-portlet" hide-collapse-tool="true" hide-settings-tool="true">
+        <form name="signupForm">
+            <md-input-container>
+                <label>Name</label>
+                <input ng-model="signup.title">
+            </md-input-container>
+
+            <md-input-container>
+                <label>Email</label>
+                <input ng-model="signup.email" type="email">
+            </md-input-container>
+
+            <md-input-container>
+                <label>Password</label>
+                <input ng-model="signup.password" name="password" type="password" required>
+            </md-input-container>
+
+            <div class="form-actions" layout="row">
+                <md-button class="md-primary md-raised" ng-click="showSimpleToast()">Send</md-button>
+                <md-button class="md-primary md-raised" ng-click="showSimpleToast()">Reset</md-button>
+            </div>
+        </form>
+    </floating-panel>
+    
+
+
+    <!-- Personal details -->
+    <!--~~~~~~~~~~~~~~~~~~-->
+    <floating-panel data-title="Personal Details" class="form-portlet" hide-collapse-tool="true" hide-settings-tool="true">
+        <form name="personalDetailsForm">
+
+            <md-radio-group ng-model="data.group1">
+                <div layout="row">
+                    <label>Sex:</label>
+                    <md-radio-button value="Apple">Male</md-radio-button>
+                    <md-radio-button value="Banana">Female</md-radio-button>
+                </div>
+            </md-radio-group>
+
+            <div layout layout-sm="column">
+                <md-input-container flex>
+                    <label>Street</label>
+                    <input ng-model="signup.street">
+                </md-input-container>
+
+                <md-input-container flex>
+                    <label>Number</label>
+                    <input type="number" step="any" name="rate" ng-model="project.rate" min="1" max="4999">
+                </md-input-container>
+            </div>
+
+            <div layout="column">
+                <!-- Too many bugs for ver v0.10.0 - not working properly -->
+<!--                <md-autocomplete md-selected-item="states.selectedItem"  
+                                 md-search-text="states.searchText"  
+                                 md-items="item in states.querySearch(states.searchText)" 
+                                 md-item-text="item.display" 
+                                 md-search-text-change="null"
+                                 md-selected-item-change="null"
+                                 md-min-length="0" 
+                    placeholder="State">
+                    
+                    <md-item-template>
+                        <span md-highlight-text="states.searchText" md-highlight-flags="^i">{{item.display}}</span>
+                    </md-item-template>
+                    <md-not-found>
+                        No matches found for "{{states.searchText}}".
+                    </md-not-found>
+                </md-autocomplete>-->
+            </div>
+
+            <md-switch ng-model="data.cb1" aria-label="Switch 1">
+                Use this address for billing
+            </md-switch>
+
+            <div class="form-actions" layout="row">
+                <md-button class="md-primary md-raised" ng-click="showSimpleToast()">Submit</md-button>
+            </div>
+        </form>
+    </floating-panel>
+    
+
+
+    <!-- Registration -->
+    <!--~~~~~~~~~~~~~-->
+    <floating-panel data-title="Personal Details" class="form-portlet-last" hide-collapse-tool="true" hide-settings-tool="true">
+        <form name="registrationForm">
+
+            <div>
+                <label class="form-label">How did you hear about us?</label>
+                <md-select ng-model="registration.survey" placeholder="You haven't selected anything yet">
+                    <md-option ng-value="opt" ng-repeat="opt in survey">{{ opt }}</md-option>
+                </md-select>
+            </div>
+
+            <md-input-container flex>
+                <label>Comments</label>
+                <textarea ng-model="signup.biography" columns="1" md-maxlength="150"></textarea>
+            </md-input-container>
+
+            <md-checkbox aria-label="Checkbox 1">
+                Sign me up for mailing list
+            </md-checkbox>
+            <md-checkbox aria-label="Checkbox 1">
+                I accept the terms and conditions of this page
+            </md-checkbox>
+
+            <div class="form-actions" layout="row">
+                <md-button class="md-primary md-raised" ng-click="showSimpleToast()">Submit</md-button>
+            </div>
+        </form>
+    </floating-panel>
+
+</md-content>

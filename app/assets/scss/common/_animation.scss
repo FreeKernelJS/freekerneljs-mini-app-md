@@ -1,0 +1,14 @@
+.page-animation.ng-animate{
+    position: absolute;
+    width: 100%;
+}
+
+.page-animation.ng-enter { 
+    z-index: 9999; 
+    opacity: 1;
+}
+
+.page-animation.ng-leave{ 
+    z-index: 8888; 
+    opacity: 0;
+}
